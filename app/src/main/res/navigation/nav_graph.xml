@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/animationFragment">
+    <fragment
+        android:id="@+id/animationFragment"
+        android:name="com.github.ulyanovskk.drinksomewater2.AnimationFragment"
+        android:label="fragment_animation"
+        tools:layout="@layout/fragment_animation" >
+        <action
+            android:id="@+id/action_animationFragment_to_drinkFragment2"
+            app:destination="@id/drinkFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinkFragment2"
+        android:name="com.github.ulyanovskk.drinksomewater2.DrinkFragment"
+        android:label="fragment_drink"
+        tools:layout="@layout/fragment_drink" />
+</navigation>
