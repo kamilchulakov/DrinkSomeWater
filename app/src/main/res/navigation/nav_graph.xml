@@ -17,5 +17,14 @@
         android:id="@+id/drinkFragment2"
         android:name="com.github.ulyanovskk.drinksomewater2.DrinkFragment"
         android:label="fragment_drink"
-        tools:layout="@layout/fragment_drink" />
+        tools:layout="@layout/fragment_drink" >
+        <action
+            android:id="@+id/action_drinkFragment2_to_addDrinkAnimationFragment"
+            app:destination="@id/addDrinkAnimationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDrinkAnimationFragment"
+        android:name="com.github.ulyanovskk.drinksomewater2.AddDrinkAnimationFragment"
+        android:label="fragment_add_drink_animation"
+        tools:layout="@layout/fragment_add_drink_animation" />
 </navigation>
