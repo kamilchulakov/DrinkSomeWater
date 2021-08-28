@@ -7,12 +7,13 @@ interface NoteDao {
     @Query("SELECT * FROM note")
     fun getAll(): List<Note>
 
-    @Query("SELECT * FROM note WHERE id IN (:noteIds)")
-    fun loadAllByIds(noteIds: Array<String>): List<String>
+    @Query("SELECT * FROM note WHERE uid IN (:noteIds)")
+    fun loadAllByIds(noteIds: Array<Int>): List<Note>
 
-    @Query("SELECT * FROM note WHERE id IN (:noteDates)")
-    fun loadAllByDates(noteDates: Array<String>): List<String>
+    @Query("SELECT * FROM note WHERE uid IN (:noteDates)")
+    fun loadAllByDates(noteDates: Array<String>): List<Note>
 
+    @RewriteQueriesToDropUnusedColumns
     @Query("SELECT * FROM note WHERE date LIKE :date")
     fun findByDate(date: String): Note
 

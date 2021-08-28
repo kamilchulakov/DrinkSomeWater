@@ -3,6 +3,7 @@
     package="com.github.ulyanovskk.drinksomewater2">
 
     <application
+        android:name=".MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_drop"
         android:label="@string/app_name"

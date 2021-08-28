@@ -8,9 +8,10 @@ import androidx.room.PrimaryKey
 
 @Entity
 data class Note(
-    @PrimaryKey(autoGenerate = true) val id: Int,
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "uid", typeAffinity = INTEGER) val id: Int,
     @ColumnInfo(name="date",typeAffinity = TEXT) val date: String,
-    @ColumnInfo(name="last_modification", typeAffinity = TEXT)val timeLastChanged: String,
-    @ColumnInfo(name="progress", typeAffinity = INTEGER) val progress: Int,
+    @ColumnInfo(name="last_modification", typeAffinity = TEXT) val timeLastChanged: String,
+    @ColumnInfo(name="progress", typeAffinity = INTEGER) var progress: Int,
     @ColumnInfo(name="goal", typeAffinity = INTEGER) val goal: Int
 )
