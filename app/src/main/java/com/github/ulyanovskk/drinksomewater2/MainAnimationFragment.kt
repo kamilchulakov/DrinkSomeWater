@@ -11,7 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.airbnb.lottie.LottieAnimationView
 import java.lang.Exception
 
-class AnimationFragment : Fragment() {
+class MainAnimationFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

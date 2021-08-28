@@ -6,7 +6,7 @@
     app:startDestination="@id/animationFragment">
     <fragment
         android:id="@+id/animationFragment"
-        android:name="com.github.ulyanovskk.drinksomewater2.AnimationFragment"
+        android:name="com.github.ulyanovskk.drinksomewater2.MainAnimationFragment"
         android:label="fragment_animation"
         tools:layout="@layout/fragment_animation" >
         <action
