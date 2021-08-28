@@ -36,20 +36,56 @@
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1 glass" />
+                android:text="@string/_1_glass" />
 
             <com.google.android.material.chip.Chip
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1 cup" />
+                android:text="@string/_1_cup" />
 
             <com.google.android.material.chip.Chip
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1 bottle" />
+                android:text="@string/_1_bottle" />
         </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/progressText"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+            android:layout_width="289dp"
+            android:layout_height="94dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="8dp"
+            android:text="Progress Today"
+            android:textColor="@color/primaryColor"
+            app:layout_constraintBottom_toTopOf="@+id/todayProgressText"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            android:id="@+id/todayProgressText"
+            android:layout_width="185dp"
+            android:layout_height="91dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="76dp"
+            android:text="1000/2000 ml"
+            app:layout_constraintBottom_toTopOf="@+id/chipGroup"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/percentage"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+            android:layout_width="88dp"
+            android:layout_height="85dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="376dp"
+            android:text="50% "
+            android:textColor="@color/primaryLightColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/todayProgressText" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

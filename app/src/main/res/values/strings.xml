@@ -3,6 +3,8 @@
     <string name="settings">Settings</string>
     <string name="history">History</string>
     <string name="cooler">Cooler</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_1_glass">1 glass</string>
+    <string name="_1_cup">1 cup</string>
+    <string name="_1_bottle">1 bottle</string>
 </resources>
