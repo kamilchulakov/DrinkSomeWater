@@ -1,4 +1,4 @@
-package com.github.ulyanovskk.drinksomewater2
+package com.github.ulyanovskk.drinksomewater2.animation_fragments
 
 import android.animation.Animator
 import android.os.Bundle
@@ -7,9 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
-import androidx.navigation.fragment.findNavController
 import com.airbnb.lottie.LottieAnimationView
-import java.lang.Exception
+import com.github.ulyanovskk.drinksomewater2.R
 
 class MainAnimationFragment : Fragment() {
 

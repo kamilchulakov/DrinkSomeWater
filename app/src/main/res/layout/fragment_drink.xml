@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:id="@+id/drinkFragment"
     android:layout_height="match_parent"
-    tools:context=".DrinkFragment">
+    tools:context=".drink_fragment.DrinkFragment">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -29,23 +29,30 @@
             android:layout_marginEnd="148dp"
             android:layout_marginBottom="164dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:singleSelection="true"
             app:layout_constraintEnd_toEndOf="parent">
 
 
             <com.google.android.material.chip.Chip
                 style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:id="@+id/chip1"
+                tools:text="2131230835"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/_1_glass" />
 
             <com.google.android.material.chip.Chip
                 style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:id="@+id/chip2"
+                tools:text="2131230836"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/_1_cup" />
 
             <com.google.android.material.chip.Chip
                 style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:id="@+id/chip3"
+                tools:text="2131230837"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/_1_bottle" />

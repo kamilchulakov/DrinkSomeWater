@@ -1,4 +1,4 @@
-package com.github.ulyanovskk.drinksomewater2
+package com.github.ulyanovskk.drinksomewater2.animation_fragments
 
 import android.animation.Animator
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import com.airbnb.lottie.LottieAnimationView
+import com.github.ulyanovskk.drinksomewater2.R
 
 class AddDrinkAnimationFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {

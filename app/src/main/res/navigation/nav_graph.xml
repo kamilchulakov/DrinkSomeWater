@@ -6,7 +6,7 @@
     app:startDestination="@id/animationFragment">
     <fragment
         android:id="@+id/animationFragment"
-        android:name="com.github.ulyanovskk.drinksomewater2.MainAnimationFragment"
+        android:name="com.github.ulyanovskk.drinksomewater2.animation_fragments.MainAnimationFragment"
         android:label="fragment_animation"
         tools:layout="@layout/fragment_animation" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/drinkFragment2"
-        android:name="com.github.ulyanovskk.drinksomewater2.DrinkFragment"
+        android:name="com.github.ulyanovskk.drinksomewater2.drink_fragment.DrinkFragment"
         android:label="fragment_drink"
         tools:layout="@layout/fragment_drink" >
         <action
@@ -24,7 +24,7 @@
     </fragment>
     <fragment
         android:id="@+id/addDrinkAnimationFragment"
-        android:name="com.github.ulyanovskk.drinksomewater2.AddDrinkAnimationFragment"
+        android:name="com.github.ulyanovskk.drinksomewater2.animation_fragments.AddDrinkAnimationFragment"
         android:label="fragment_add_drink_animation"
         tools:layout="@layout/fragment_add_drink_animation" />
 </navigation>

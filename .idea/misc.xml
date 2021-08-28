@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable/ic_drop_foreground.xml" value="0.1935185185185185" />
         <entry key="app/src/main/res/drawable/ic_water.xml" value="0.17962962962962964" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2907608695652174" />
+        <entry key="app/src/main/res/layout/fragment_add_drink_animation.xml" value="0.16891891891891891" />
         <entry key="app/src/main/res/layout/fragment_animation.xml" value="0.1953125" />
         <entry key="app/src/main/res/layout/fragment_drink.xml" value="0.1953125" />
         <entry key="app/src/main/res/menu/nav_menu.xml" value="0.1953125" />
