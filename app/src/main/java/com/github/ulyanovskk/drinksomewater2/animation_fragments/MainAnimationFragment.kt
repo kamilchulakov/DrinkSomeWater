@@ -4,10 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.airbnb.lottie.LottieAnimationView
 import com.github.ulyanovskk.drinksomewater2.R
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainAnimationFragment : Fragment() {
 
@@ -27,6 +29,7 @@ class MainAnimationFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val animationView = view.findViewById<LottieAnimationView>(R.id.animation_view)
         animationView.addAnimatorListener(NavigationAnimatorListener(findNavController(), R.id.action_animationFragment_to_drinkFragment2))
+        requireActivity().findViewById<BottomNavigationView>(R.id.bottomNavView).isVisible = false
     }
 
 }

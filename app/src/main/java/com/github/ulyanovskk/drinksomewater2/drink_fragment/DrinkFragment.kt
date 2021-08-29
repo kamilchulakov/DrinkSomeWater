@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.Navigation
@@ -13,6 +14,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.preference.PreferenceManager
 import com.github.ulyanovskk.drinksomewater2.R
 import com.github.ulyanovskk.drinksomewater2.model.Note
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
 import com.google.android.material.textview.MaterialTextView
@@ -27,6 +29,7 @@ class DrinkFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         percentsView = requireView().findViewById(R.id.percentage)
         progressView = requireView().findViewById(R.id.todayProgressText)
+        requireActivity().findViewById<BottomNavigationView>(R.id.bottomNavView).isVisible = true
         requireView().findViewById<Button>(R.id.drinkBtn).setOnClickListener {
             viewModel.noteCopy.progress += getCheckedChipValue() ?: drinkSize
             viewModel.saveData()
