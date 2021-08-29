@@ -12,15 +12,28 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/drinkBtn"
-            android:layout_width="93dp"
-            android:layout_height="149dp"
-            android:layout_marginEnd="36dp"
-            android:layout_marginBottom="164dp"
+            android:layout_width="92dp"
+            android:layout_height="102dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="208dp"
             android:background="@color/primaryColor"
             android:text="@string/app_name"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sugarBtn"
+            android:layout_width="92dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/black"
+            android:background="@color/black"
+            android:text="Sugar"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/drinkBtn" />
 
         <com.google.android.material.chip.ChipGroup
             android:id="@+id/chipGroup"
@@ -94,17 +107,17 @@
             app:layout_constraintEnd_toStartOf="@+id/todayProgressText" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/hintGlass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="28dp"
             android:layout_marginBottom="28dp"
             android:text="200 ml"
-            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintBottom_toTopOf="@+id/hintCup"
             app:layout_constraintEnd_toStartOf="@+id/chipGroup" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/hintCup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="28dp"

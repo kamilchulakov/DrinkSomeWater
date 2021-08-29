@@ -30,6 +30,15 @@
         <action
             android:id="@+id/action_drinkFragment2_to_addDrinkAnimationFragment"
             app:destination="@id/addDrinkAnimationFragment" />
+        <action
+            android:id="@+id/action_drinkFragment2_to_historyFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_drinkFragment2_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_drinkFragment2_to_sugarFragment"
+            app:destination="@id/sugarFragment" />
     </fragment>
     <fragment
         android:id="@+id/addDrinkAnimationFragment"
@@ -42,14 +51,46 @@
             app:launchSingleTop="true"
             app:popUpTo="@id/drinkFragment2"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_addDrinkAnimationFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_addDrinkAnimationFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.github.ulyanovskk.drinksomewater2.SettingsFragment"
-        android:label="SettingsFragment" />
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_self"
+            app:destination="@id/settingsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/historyFragment"
         android:name="com.github.ulyanovskk.drinksomewater2.history_fragment.HistoryFragment"
         android:label="history_fragment"
-        tools:layout="@layout/history_fragment" />
+        tools:layout="@layout/history_fragment" >
+        <action
+            android:id="@+id/action_historyFragment_self"
+            app:destination="@id/historyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sugarFragment"
+        android:name="com.github.ulyanovskk.drinksomewater2.animation_fragments.SugarFragment"
+        android:label="fragment_sugar"
+        tools:layout="@layout/fragment_sugar" >
+        <action
+            android:id="@+id/action_sugarFragment_to_drinkFragment2"
+            app:destination="@id/drinkFragment2"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/drinkFragment2"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_sugarFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_sugarFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
 </navigation>
