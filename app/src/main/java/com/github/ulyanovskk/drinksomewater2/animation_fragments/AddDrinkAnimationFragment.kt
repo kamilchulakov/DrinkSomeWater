@@ -1,12 +1,11 @@
 package com.github.ulyanovskk.drinksomewater2.animation_fragments
 
-import android.animation.Animator
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import com.airbnb.lottie.LottieAnimationView
 import com.github.ulyanovskk.drinksomewater2.R
 
@@ -26,22 +25,6 @@ class AddDrinkAnimationFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val animationView = view.findViewById<LottieAnimationView>(R.id.add_animation_view)
-        animationView.addAnimatorListener(object: Animator.AnimatorListener {
-            override fun onAnimationStart(animation: Animator?) {
-            }
-
-            override fun onAnimationEnd(animation: Animator?) {
-                Navigation.findNavController(requireView()).navigate(R.id.action_addDrinkAnimationFragment_to_drinkFragment24)
-            }
-
-            override fun onAnimationCancel(animation: Animator?) {
-                Navigation.findNavController(requireView()).navigate(R.id.action_addDrinkAnimationFragment_to_drinkFragment24)
-            }
-
-            override fun onAnimationRepeat(animation: Animator?) {
-                Navigation.findNavController(requireView()).navigate(R.id.action_addDrinkAnimationFragment_to_drinkFragment24)
-            }
-
-        })
+        animationView.addAnimatorListener(NavigationAnimatorListener(findNavController(), R.id.action_addDrinkAnimationFragment_to_drinkFragment24))
     }
 }
