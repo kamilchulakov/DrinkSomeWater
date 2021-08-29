@@ -2,10 +2,10 @@ package com.github.ulyanovskk.drinksomewater2.animation_fragments
 
 import android.animation.Animator
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.airbnb.lottie.LottieAnimationView
 import com.github.ulyanovskk.drinksomewater2.R
@@ -31,15 +31,15 @@ class AddDrinkAnimationFragment : Fragment() {
             }
 
             override fun onAnimationEnd(animation: Animator?) {
-                Navigation.findNavController(requireView()).navigate(R.id.drinkFragment2)
+                Navigation.findNavController(requireView()).navigate(R.id.action_addDrinkAnimationFragment_to_drinkFragment24)
             }
 
             override fun onAnimationCancel(animation: Animator?) {
-                Navigation.findNavController(requireView()).navigate(R.id.drinkFragment2)
+                Navigation.findNavController(requireView()).navigate(R.id.action_addDrinkAnimationFragment_to_drinkFragment24)
             }
 
             override fun onAnimationRepeat(animation: Animator?) {
-                Navigation.findNavController(requireView()).navigate(R.id.drinkFragment2)
+                Navigation.findNavController(requireView()).navigate(R.id.action_addDrinkAnimationFragment_to_drinkFragment24)
             }
 
         })

@@ -22,7 +22,8 @@ class DrinkFragment : Fragment() {
         requireView().findViewById<Button>(R.id.drinkBtn).setOnClickListener {
             viewModel.noteCopy.progress += 100
             viewModel.saveData()
-            Navigation.findNavController(requireView()).navigate(R.id.addDrinkAnimationFragment)
+            val navController = Navigation.findNavController(requireView())
+            navController.navigate(R.id.addDrinkAnimationFragment)
         }
         viewModel = DrinkViewModel(requireContext())
         viewModel.liveData.observe(viewLifecycleOwner, Observer{

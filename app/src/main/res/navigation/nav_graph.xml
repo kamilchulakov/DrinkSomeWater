@@ -11,7 +11,10 @@
         tools:layout="@layout/fragment_animation" >
         <action
             android:id="@+id/action_animationFragment_to_drinkFragment2"
-            app:destination="@id/drinkFragment2" />
+            app:destination="@id/drinkFragment2"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/animationFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/drinkFragment2"
@@ -26,5 +29,12 @@
         android:id="@+id/addDrinkAnimationFragment"
         android:name="com.github.ulyanovskk.drinksomewater2.animation_fragments.AddDrinkAnimationFragment"
         android:label="fragment_add_drink_animation"
-        tools:layout="@layout/fragment_add_drink_animation" />
+        tools:layout="@layout/fragment_add_drink_animation" >
+        <action
+            android:id="@+id/action_addDrinkAnimationFragment_to_drinkFragment24"
+            app:destination="@id/drinkFragment2"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/animationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>

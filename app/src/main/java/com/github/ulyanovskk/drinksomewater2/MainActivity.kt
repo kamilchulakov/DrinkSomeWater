@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         val navigationHost = supportFragmentManager.findFragmentById(R.id.fragmentNavHost) as NavHostFragment
         val navController = navigationHost.navController
+        navController.popBackStack(R.id.drinkFragment2, true)
         findViewById<BottomNavigationView>(R.id.bottomNavView).apply {
             setupWithNavController(navController)
         }

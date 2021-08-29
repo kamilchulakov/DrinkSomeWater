@@ -77,7 +77,7 @@
             android:layout_height="91dp"
             android:layout_marginEnd="52dp"
             android:layout_marginBottom="76dp"
-            android:text="1000/2000 ml"
+            android:text="000/2000 ml"
             app:layout_constraintBottom_toTopOf="@+id/chipGroup"
             app:layout_constraintEnd_toEndOf="parent" />
 

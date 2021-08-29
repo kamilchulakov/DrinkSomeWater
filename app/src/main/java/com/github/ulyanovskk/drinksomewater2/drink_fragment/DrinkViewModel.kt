@@ -25,8 +25,8 @@ class DrinkViewModel(context: Context): ViewModel() {
         viewModelScope.launch {
             val data = repository.getTodayData()
             if (isActive) {
-                _liveData.value = data
                 noteCopy = data
+                _liveData.value = data
             }
         }
     }
