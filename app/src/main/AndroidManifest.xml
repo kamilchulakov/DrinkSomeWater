@@ -6,7 +6,7 @@
         android:name=".MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_drop"
-        android:label="Drink some water!"
+        android:label="Drink Some Water!"
         android:roundIcon="@mipmap/ic_drop_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DrinkSomeWater2">
