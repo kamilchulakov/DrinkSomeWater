@@ -36,7 +36,8 @@ class RepoModule {
             .build()
         ioThread {
             //db.noteDao().insert(Note(1, getYesterdayData(), getCurrentTime(), 2000, 2000))
-            db.noteDao().insert(Note(2, getCurrentData(), getCurrentTime(), 1000, 2000))
+            val note = db.noteDao().findByDate(getCurrentData())
+            if (note == null || note.progress == 0) db.noteDao().insert(Note(1, getCurrentData(), getCurrentTime(), 0, 2000))
         }
         return db
     }
