@@ -13,7 +13,6 @@ interface NoteDao {
     @Query("SELECT * FROM note WHERE uid IN (:noteDates)")
     fun loadAllByDates(noteDates: Array<String>): List<Note>
 
-    @RewriteQueriesToDropUnusedColumns
     @Query("SELECT * FROM note WHERE date LIKE :date")
     fun findByDate(date: String): Note
 
@@ -25,4 +24,7 @@ interface NoteDao {
 
     @Delete
     fun delete(note: Note)
+
+    @Insert
+    fun insertAll(defaultNotes: List<Note>)
 }
