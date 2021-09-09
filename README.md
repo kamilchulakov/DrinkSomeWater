@@ -8,7 +8,9 @@ But it also is powered by:
 - Room DB
 - LiveData
 ```
-### 
+### How does it look:
+
+![app-gif](.github/app.gif)
 
 ### Issues:
 - DB is not working properly
