@@ -8,10 +8,10 @@ import java.util.*
 import javax.inject.Inject
 
 class Repository() {
-    val goal = 2000
+    private val goal = 2000
     @Inject
     lateinit var db: AppDatabase
-    fun getDao(): NoteDao {
+    private fun getDao(): NoteDao {
         return db.noteDao()
     }
     suspend fun getTodayData(): Note {

@@ -4,11 +4,7 @@ import android.app.Application
 import android.content.Context
 import androidx.room.Room
 import com.github.ulyanovskk.drinksomewater2.model.AppDatabase
-import com.github.ulyanovskk.drinksomewater2.model.Note
 import com.github.ulyanovskk.drinksomewater2.model.Repository
-import com.github.ulyanovskk.drinksomewater2.utils.getCurrentData
-import com.github.ulyanovskk.drinksomewater2.utils.getCurrentTime
-import com.github.ulyanovskk.drinksomewater2.utils.ioThread
 import dagger.BindsInstance
 import dagger.Component
 import dagger.Module
@@ -29,17 +25,10 @@ interface AppComponent {
 class RepoModule {
     @Provides
     fun getDatabase(context: Context): AppDatabase {
-        val db = Room.databaseBuilder(
+        return Room.databaseBuilder(
             context,
             AppDatabase::class.java, "note"
-        )
-            .build()
-        ioThread {
-            //db.noteDao().insert(Note(1, getYesterdayData(), getCurrentTime(), 2000, 2000))
-            val note = db.noteDao().findByDate(getCurrentData())
-            if (note == null || note.progress == 0) db.noteDao().insert(Note(1, getCurrentData(), getCurrentTime(), 0, 2000))
-        }
-        return db
+        ).build()
     }
 
 }
