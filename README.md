@@ -2,7 +2,7 @@
 
 ### About the App:
 ```
-This repository is all about Navigation and Lottie.
+This app is all about drinking water, Navigation and Lottie GIFs.
 But it also is powered by:
 - Dagger2
 - Room DB
